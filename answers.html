@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="vice">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GTA VI Answers — Beginner Knowledge Base</title>
+  <meta name="description" content="Quick, checked answers to common GTA VI questions for brand-new players." />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "When does GTA VI launch?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "GTA VI launches at midnight on November 19, 2026 in each player's local time zone."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="answers">
+  <div class="wrap page-enter">
+    <div id="hud-header-mount"></div>
+
+    <main>
+      <section class="card glass glow-card border-beam">
+        <div class="beam-ring" aria-hidden="true"></div>
+        <span class="tag-chip">Knowledge Base // New Players</span>
+        <h1 id="answers-page-title" class="display-font shimmer-title">[Your Name]'s GTA VI Answers</h1>
+        <p class="muted">Search verified answers, check dates, and view recommended gear.</p>
+        <div style="margin-top: 14px;">
+          <input id="qa-search" class="input-box" type="search" placeholder="Search questions (e.g., storage, preload, online, languages)..." aria-label="Search GTA VI questions" />
+          <div id="qa-count" class="muted" style="margin-top: 8px; font-size: 0.85rem;"></div>
+        </div>
+      </section>
+
+      <section id="qa-list" class="stack-grid" aria-live="polite"></section>
+    </main>
+
+    <footer class="glass">
+      Disclosure: Some links on this page are affiliate links. If you purchase through them, this site may earn a small commission at no extra cost to you. Not affiliated with Rockstar Games.
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
