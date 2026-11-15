@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="vice">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GTA VI Progress Tracker — 100% Completion Ledger</title>
+  <meta name="description" content="Track GTA VI Story Missions, Side Jobs, Collectibles, and Vehicles directly in your browser." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="tracker">
+  <div class="wrap page-enter">
+    <div id="hud-header-mount"></div>
+
+    <main>
+      <div id="storage-alert" class="storage-alert">
+        Browser saving is blocked in this session. You can continue using the tracker, though changes will not persist after closing the tab.
+      </div>
+
+      <section class="card glass glow-card border-beam">
+        <div class="beam-ring" aria-hidden="true"></div>
+        <div class="head-split">
+          <div>
+            <span class="tag-chip">Completion Ledger</span>
+            <h1 class="display-font shimmer-title">GTA VI Progress Tracker</h1>
+            <p class="muted" style="margin:0;">Add your own items, write notes, and track completion automatically in your browser.</p>
+          </div>
+          <a href="answers.html" data-nav class="btn-primary">GTA VI Answers</a>
+        </div>
+
+        <div style="margin-top: 18px;">
+          <div class="head-split">
+            <strong>Overall Game Progress</strong>
+            <span id="overall-pct" class="pct-text">0% (0/0)</span>
+          </div>
+          <div class="bar-track"><div id="overall-bar" class="bar-fill"></div></div>
+        </div>
+      </section>
+
+      <div id="tracker-mount" class="stack-grid"></div>
+    </main>
+
+    <footer class="glass">
+      Progress is stored locally inside your browser. Fan-made tool — not affiliated with Rockstar Games.
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
