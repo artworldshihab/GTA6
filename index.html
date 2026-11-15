@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="vice">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GTA VI Hub — Launch Night Portal & Countdown</title>
+  <meta name="description" content="GTA VI Launch Night Portal: live local countdown to midnight November 19, readiness checklist, beginner answers, 100% progress tracker, and live news." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="countdown">
+  <div class="wrap page-enter">
+    <div id="hud-header-mount"></div>
+
+    <main>
+      <section class="card glass glow-card border-beam" style="text-align: center;">
+        <div class="beam-ring" aria-hidden="true"></div>
+        <span class="tag-chip">Leonida Entry Gate // Launch Night</span>
+        <h1 class="display-font shimmer-title">Countdown to Midnight, Nov 19</h1>
+        <p id="tz-label" class="muted">Detecting local time zone...</p>
+
+        <div id="live-banner" class="live-banner">
+          Midnight November 19 has arrived in your time zone. Launch Night is live.
+        </div>
+
+        <div class="countdown-grid">
+          <div class="time-unit glass glow-card" data-tilt><span id="cd-d" class="time-val">00</span><span class="time-lbl">Days</span></div>
+          <div class="time-unit glass glow-card" data-tilt><span id="cd-h" class="time-val">00</span><span class="time-lbl">Hours</span></div>
+          <div class="time-unit glass glow-card" data-tilt><span id="cd-m" class="time-val">00</span><span class="time-lbl">Minutes</span></div>
+          <div class="time-unit glass glow-card" data-tilt><span id="cd-s" class="time-val">00</span><span class="time-lbl">Seconds</span></div>
+        </div>
+
+        <a href="answers.html" data-nav class="btn-primary">Day One Answers</a>
+      </section>
+
+      <!-- 21st.dev Style 3D Tilt Bento Grid -->
+      <section class="bento-grid" aria-label="Interactive modules">
+        <a href="answers.html" data-nav class="bento-tile glass glow-card" data-tilt>
+          <div class="portal-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <div>
+            <h2 class="display-font">Day One Answers</h2>
+            <p class="muted" style="margin:0;">Instant searchable answers for storage, languages, preload, and beginner tips.</p>
+          </div>
+          <div class="bento-preview">
+            <span>Query: "212 GB SSD" — Verified Ready</span>
+          </div>
+        </a>
+
+        <a href="tracker.html" data-nav class="bento-tile glass glow-card" data-tilt>
+          <div class="portal-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+          </div>
+          <div>
+            <h2 class="display-font">100% Completion</h2>
+            <p class="muted" style="margin:0;">Track Story Missions, Side Jobs, Collectibles, and Vehicles with personal notes.</p>
+          </div>
+          <div class="bento-preview">
+            <span>Progress Sync Active</span>
+            <div class="mini-bar"><div class="mini-bar-fill"></div></div>
+          </div>
+        </a>
+
+        <a href="news.html" data-nav class="bento-tile glass glow-card" data-tilt>
+          <div class="portal-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="2"/><path d="M16.2 7.8c2.3 2.3 2.3 6.1 0 8.5"/><path d="M7.8 16.2c-2.3-2.3-2.3-6.1 0-8.5"/></svg>
+          </div>
+          <div>
+            <h2 class="display-font">Vice Wire Intel</h2>
+            <p class="muted" style="margin:0;">Live auto-syncing GTA VI news stream with verified launch coverage.</p>
+          </div>
+          <div class="bento-preview" style="display:flex; align-items:center; gap:8px;">
+            <span class="pulse-dot"></span>
+            <span>Auto-Feed Channel Live</span>
+          </div>
+        </a>
+      </section>
+
+      <section class="card glass glow-card">
+        <h2 class="display-font">Pre-Launch Readiness Checklist</h2>
+        <p class="muted">Complete these four checks before midnight in your region.</p>
+        <ul class="checklist">
+          <li><label class="check-row"><input type="checkbox" data-check="preloaded" /><span>Game pre-loaded</span></label></li>
+          <li><label class="check-row"><input type="checkbox" data-check="storage" /><span>Enough storage space free</span></label></li>
+          <li><label class="check-row"><input type="checkbox" data-check="controller" /><span>Controller charged</span></label></li>
+          <li><label class="check-row"><input type="checkbox" data-check="snacks" /><span>Snacks ready</span></label></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="glass">
+      Fan-made GTA VI companion portal. Not affiliated with or endorsed by Rockstar Games.
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
