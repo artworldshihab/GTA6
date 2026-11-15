@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="vice">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vice Wire — Live GTA VI News Feed</title>
+  <meta name="description" content="Auto-syncing GTA VI news stream powered by Google News RSS with verified launch coverage." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="news">
+  <div class="wrap page-enter">
+    <div id="hud-header-mount"></div>
+
+    <main>
+      <section class="card glass glow-card border-beam">
+        <div class="beam-ring" aria-hidden="true"></div>
+        <span class="tag-chip">Vice Wire // Live Intel</span>
+        <h1 class="display-font shimmer-title">Live GTA VI News Stream</h1>
+        <p class="muted">Automatically pulls fresh headlines from Google News RSS with verified fallback coverage.</p>
+
+        <div class="head-split" style="margin-top: 14px;">
+          <div style="display:inline-flex; align-items:center; gap:9px; font-size:0.86rem; font-weight:600;">
+            <span class="pulse-dot"></span>
+            <span id="sync-status">Ready</span>
+          </div>
+
+          <div style="display:flex; gap:8px; flex-wrap:wrap; align-items:center;">
+            <select id="refresh-rate" class="theme-picker" aria-label="Auto-sync interval">
+              <option value="300000">Auto-sync: Every 5 min</option>
+              <option value="900000">Auto-sync: Every 15 min</option>
+              <option value="0">Auto-sync: Manual only</option>
+            </select>
+            <button id="sync-now" class="btn-ghost" type="button">Sync Now</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="news-list" class="stack-grid" aria-live="polite"></section>
+    </main>
+
+    <footer class="glass">
+      Headlines link directly to original publishers. Fan-made portal — not affiliated with Rockstar Games.
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
